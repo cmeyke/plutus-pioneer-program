@@ -31,7 +31,7 @@ import Prelude (IO, Semigroup (..), String, undefined)
 {-# INLINEABLE mkValidator #-}
 -- This should validate if and only if the two Booleans in the redeemer are equal!
 mkValidator :: () -> (Bool, Bool) -> ScriptContext -> Bool
-mkValidator _ (a, b) _ = a == b
+mkValidator _ (a, b) _ = traceIfFalse "wrong redeemer" $ a == b
 
 data Typed
 
