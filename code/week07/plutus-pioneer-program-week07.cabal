@@ -9,11 +9,14 @@ License:             Apache-2.0
 License-files:       LICENSE
 
 library
-  hs-source-dirs:      src
-  exposed-modules:     Week07.EvenOdd
-                     , Week07.StateMachine
-                     , Week07.Test
+  hs-source-dirs:    src
+  exposed-modules:
+                       Week07.TestRockPaperScissors
                      , Week07.TestStateMachine
+                     , Week07.Test
+                     , Week07.EvenOdd
+                     , Week07.StateMachine
+                     , Week07.RockPaperScissors
   build-depends:       aeson
                      , base ^>=4.14.1.0
                      , containers
